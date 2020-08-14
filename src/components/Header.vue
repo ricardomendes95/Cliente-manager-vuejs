@@ -55,20 +55,19 @@ export default {
   padding: 0;
 }
 .sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #1f2940; /* Black*/
+  background-color: #1f2940;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
   z-index: 1000;
 }
 
-/* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -78,12 +77,10 @@ export default {
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #646af2;
 }
 
-/* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -92,7 +89,6 @@ export default {
   margin-left: 50px;
 }
 
-/* The button used to open the sidebar */
 .openbtn {
   font-size: 2rem;
   cursor: pointer;
@@ -106,7 +102,6 @@ export default {
   background-color: #141b2d;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
   width: 100%;
@@ -120,19 +115,16 @@ export default {
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   transition: 0.3s;
   background-color: transparent;
   align-items: center;
   border: none;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add some padding inside the card container */
 .container {
   padding: 10px 16px;
   text-align: center;
@@ -143,8 +135,6 @@ export default {
   width: 50%;
   border-radius: 50%;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-heigth: 450px) {
   .sidebar {

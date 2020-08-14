@@ -19,8 +19,8 @@
             <td>{{ client.name }}</td>
             <td class="text-capitalize">{{ client.description }}</td>
             <td>
-              <button class="btn ">
-                <fa-icon :icon="['fas', 'ellipsis-v']" style="color: #111" />
+              <button id="action" class="btn">
+                <fa-icon :icon="['fas', 'ellipsis-v']" size="2x" />
               </button>
             </td>
           </tr>
@@ -46,8 +46,15 @@ export default {
     return {
       clients: [
         { cod: 1, name: "jose", description: "pegou emprestimo" },
-        { cod: 3, name: "maria", description: "pegou emprestimo" },
-        { cod: 4, name: "corno", description: "pegou emprestimo" }
+        { cod: 2, name: "maria", description: "pegou emprestimo" },
+        { cod: 3, name: "corno", description: "pegou emprestimo" },
+        { cod: 4, name: "corno", description: "pegou emprestimo" },
+        { cod: 5, name: "corno", description: "pegou emprestimo" },
+        { cod: 6, name: "corno", description: "pegou emprestimo" },
+        { cod: 7, name: "corno", description: "pegou emprestimo" },
+        { cod: 8, name: "corno", description: "pegou emprestimo" },
+        { cod: 9, name: "corno", description: "pegou emprestimo" },
+        { cod: 10, name: "corno", description: "pegou emprestimo" }
       ]
     };
   }
@@ -72,8 +79,8 @@ h3 {
 
 .ListClients {
   height: 100vh;
-  background-color: #141b2d;
-  padding: 5%;
+  background-color: #1c2334;
+  padding: 0 5% 0 5%;
 }
 
 table {
@@ -107,6 +114,14 @@ tr:nth-child(even) {
 #pagination {
   display: flex;
   justify-content: flex-end;
+}
+
+#action {
+  color: #efefef;
+}
+
+#action:hover {
+  color: #646af2;
 }
 
 select {
